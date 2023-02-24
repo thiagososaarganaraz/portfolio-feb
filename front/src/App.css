@@ -604,7 +604,10 @@ footer h4{
   }
   .home{
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 50px;
+  }
+  .home h3{
+    margin-left: 20px;
   }
   .home h1{
     font-size: 60px;
@@ -622,7 +625,7 @@ footer h4{
   }
 
   .title-wrapper h3{
-    inline-size: 400px;
+    inline-size: 390px;
 
   }
 
@@ -702,5 +705,12 @@ footer h4{
 
   .contact-wrapper{
     width: 90%;
+  }
+
+  .stack h3:first-of-type,
+  .projects h3:first-of-type,
+  .qualification h3:first-of-type,
+  .contact h3:first-of-type{
+    margin-left: 2rem;
   }
 }
