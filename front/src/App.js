@@ -99,7 +99,7 @@ const App = () => {
       <div className="home">
         <div className="main-first-wrapper">
           <div className="title-wrapper">
-            <h3>FULLSTACK DEVELOPER</h3>
+            <h3 className="title">FULLSTACK DEVELOPER</h3>
             {/* <div className="fullstack-line"></div> */}
             <h1>MAKE YOUR</h1>
             <h1>IDEAS COME TRUE</h1>
@@ -152,7 +152,7 @@ const App = () => {
         </div>
       </div>
       <div className="stack" id="stack">
-        <h3>STACK</h3>
+        <h3 className="title">STACK</h3>
         <div className="stack-wrapper">
           <div>
             <h2>FRONTEND</h2>
@@ -224,7 +224,7 @@ const App = () => {
         </div>
       </div>
       <div className="projects" id="projects">
-        <h3>PROJECTS</h3>
+        <h3 className="title">PROJECTS</h3>
         <div className="project-wrapper">
           <button onClick={handlePrevious}>←</button>
           <div className="project-viewer">
@@ -248,7 +248,7 @@ const App = () => {
         </div>
       </div>
       <div className="qualification" id="qualification">
-        <h3>QUALIFICATION</h3>
+        <h3 className="title">QUALIFICATION</h3>
         <h2>MY CAREER</h2>
         <div className="qualification-wrapper">
           {!qualification ? (
@@ -337,7 +337,7 @@ const App = () => {
         </div>
       </div>
       <div className="contact" id="contact">
-        <h3>CONTACT</h3>
+        <h3 className="title">CONTACT</h3>
         <div className="contact-wrapper">
           <form>
             <h1>GET IN TOUCH</h1>

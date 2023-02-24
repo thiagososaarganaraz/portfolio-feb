@@ -576,15 +576,75 @@ footer h4{
 /* MEDIAQUERIES */
 
 @media (max-width: 600px) {
-  .main-container{
-    overflow: hidden;
-  }
   .main-container nav{
-    width: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  .main-container nav ul{
+    padding-inline-start: 0;
+  }
+  .main-container nav ul:last-of-type{
+    display: none;
+  }
+  .title-wrapper h3:nth-of-type(2){
+    margin-top: 0;
+  }
+  .main-profile-photo{
+    width: 100%;
+    height: auto;
+  }
+
+  .main-first-wrapper{
+    width: 40%;
+  }
+
+  .main-second-wrapper{
+    margin-top: 5rem;
+    width: 60%;
   }
   .home{
     margin: 0;
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+  .home h3{
+    margin-left: 20px;
+  }
+  .home h1{
+    font-size: 60px;
+    padding-left: 20px;
+  }
+  .home h1:last-of-type{
+    font-size: 60px;
+    overflow: hidden;
+    inline-size: auto;
+    position: relative;
+  }
+
+  .home h3{
+    font-size: 14px;
+  }
+
+  .title-wrapper h3{
+    inline-size: 390px;
+
+  }
+
+  .experience-wrapper h2{
+    font-size: 18px;
+    inline-size: 300px;
+  }
+
+  .home-bottom-left-wrapper{
+    margin-left: 2rem;
+  }
+
+  .cv-button-wrapper{
+    margin-left: 2rem;
+  }
+
+  .cv-button-wrapper h4{
+    inline-size: 400px;
+    font-size: 18px;
   }
 
   .stack-wrapper{
@@ -596,7 +656,65 @@ footer h4{
     margin: 1rem auto;
   }
 
-  .frontend-stack-wrapper, .backend-stack-wrapper{
-    
+  .stack-wrapper h4{
+    font-size: 15px;
+  }
+
+  .stack-wrapper i{
+    font-size: 15px;
+  }
+
+  .project-viewer{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-wrapper button{
+    margin: 0;
+  }
+
+  .project-viewer div{
+    width: 100%;
+  }
+
+  .project-viewer section{
+    width: 100%;
+  }
+
+  .qualification-wrapper{
+    flex-direction: column;
+  }
+
+  .qualification-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .qualification-grid div{
+    border: none;
+  }
+
+  .qualification-wrapper section{
+    width: 100%;
+  }
+
+  .qualification-wrapper section button{
+    padding: .8rem 1rem;
+  }
+
+  .contact-wrapper{
+    width: 90%;
+  }
+
+  .contact form input{
+    width: 90%;
+  }
+
+  .stack h3:first-of-type,
+  .projects h3:first-of-type,
+  .qualification h3:first-of-type,
+  .contact h3:first-of-type{
+    margin-left: 2rem;
   }
 }
