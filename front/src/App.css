@@ -205,7 +205,7 @@ header nav ul:first-of-type li a{
   margin: 1rem 0;
 }
 
-.cv-button-wrapper button{
+.cv-button-wrapper a{
   padding: .4rem 2rem;
   font-size: 25px;
   background-color: transparent;
@@ -213,9 +213,10 @@ header nav ul:first-of-type li a{
   color: #fff;
   cursor: pointer;
   transition: .3s;
+  text-decoration: none;
 }
 
-.cv-button-wrapper button:hover{
+.cv-button-wrapper a:hover{
   background-color: #fff;
   color: #000;
 }
@@ -578,7 +579,9 @@ footer h4{
 @media (max-width: 600px) {
   .main-container nav{
     width: 100%;
-    padding: 1rem;
+  }
+  .main-container{
+    overflow: hidden;
   }
   .main-container nav ul{
     padding-inline-start: 0;
@@ -625,7 +628,7 @@ footer h4{
   }
 
   .title-wrapper h3{
-    inline-size: 390px;
+    inline-size: 300px
 
   }
 
@@ -643,7 +646,6 @@ footer h4{
   }
 
   .cv-button-wrapper h4{
-    inline-size: 400px;
     font-size: 18px;
   }
 
@@ -683,6 +685,7 @@ footer h4{
 
   .qualification-wrapper{
     flex-direction: column;
+    width: 95%;
   }
 
   .qualification-grid{
@@ -693,6 +696,18 @@ footer h4{
   
   .qualification-grid div{
     border: none;
+  }
+
+  .qualification-grid h4{
+    font-size: 16px;
+    text-align: right;
+    margin-right: .5rem;
+  }
+
+  .qualification-grid div:nth-of-type(3),
+  .qualification-grid div:nth-of-type(4){
+    border-bottom: 2px solid #ddd;
+    border-right: none;
   }
 
   .qualification-wrapper section{

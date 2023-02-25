@@ -5,6 +5,7 @@ import project1 from "./img/projects/Ecommerce.jpg";
 import project2 from "./img/projects/colibriweb.png";
 import project3 from "./img/projects/wcweb.png";
 import project4 from "./img/projects/golf.png";
+import cv from "./cv/cv.pdf";
 
 const App = () => {
   const projects = [
@@ -40,7 +41,7 @@ const App = () => {
       description:
         "Landing page para la marca GOLF. Diseño y maquetado realizado en Figma, Desarrollada en React.",
       repository: "https://github.com/thiaguetas/golflandingpage",
-      img: project3,
+      img: project4,
     },
     {
       name: "Qatar World Cup Stats",
@@ -48,12 +49,12 @@ const App = () => {
       description:
         "Pagina de datos en tiempo real sobre el mundial de Qatar 2022. Se trata de un proyecto el cual presenté como proyecto final para la materia Programación IV de la carrera de Programación Universitaria",
       repository: "https://github.com/thiaguetas/qatar-wc",
-      img: project4,
+      img: project3,
     },
   ];
 
   const [num, setNum] = useState(0);
-  const [qualification, setQualification] = useState(true);
+  const [qualification, setQualification] = useState(false);
 
   const handleNext = (e) => {
     setNum(num + 1);
@@ -109,7 +110,9 @@ const App = () => {
             </h3>
           </div>
           <div className="cv-button-wrapper">
-            <button>↓</button>
+            <a href={cv} download={"Thiago_CV"}>
+              ↓
+            </a>
             <h4>DOWNLOAD CV</h4>
           </div>
           <div className="home-bottom-left-wrapper">
@@ -241,7 +244,9 @@ const App = () => {
               </ul>
               <h4>DESCRIPTION:</h4>
               <p>{projects[num]?.description}</p>
-              <a href={projects[num]?.repository}>Repository</a>
+              <a href={projects[num]?.repository} target="_blank">
+                Repository
+              </a>
             </section>
           </div>
           <button onClick={handleNext}>→</button>
@@ -284,25 +289,25 @@ const App = () => {
                 <h1>1</h1>
                 <h2>2020</h2>
                 <h3>SOFTWARE DEVELOPER</h3>
-                <h4 style={{ fontSize: "22px" }}>RV</h4>
+                <h4>RV</h4>
               </div>
               <div>
                 <h1>2</h1>
                 <h2>2020-2021</h2>
                 <h3>SOFTWARE MANTAINANCE</h3>
-                <h4 style={{ fontSize: "22px" }}>RV</h4>
+                <h4>RV</h4>
               </div>
               <div>
                 <h1>3</h1>
                 <h2>2022-2023</h2>
                 <h3>FULLSTACK DEVELOPER</h3>
-                <h4 style={{ fontSize: "22px" }}>FREELANCE, COLIBRI</h4>
+                <h4>FREELANCE, COLIBRI</h4>
               </div>
               <div>
                 <h1>4</h1>
                 <h2>2023</h2>
                 <h3>FRONTEND DEVELOPER</h3>
-                <h4 style={{ fontSize: "22px" }}>GOLF</h4>
+                <h4>GOLF</h4>
               </div>
             </div>
           )}
